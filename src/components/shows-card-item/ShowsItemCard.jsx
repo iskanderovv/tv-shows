@@ -12,13 +12,14 @@ const ShowsItemCard = ({title, image}) => {
       sx={{
         background: "#222933",
         maxWidth: { lg: "350px", md: "300px", sm: "350px", xs: "350px" },
+        width: '100%',
       }}
     >
       <CardActionArea>
         <CardMedia
           component="img"
           sx={{
-            height: { xs: "auto", md: 350 },
+            height: 400,
             width: "100%",
             objectFit: "cover",
           }}
