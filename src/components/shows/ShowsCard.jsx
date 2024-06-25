@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const ShowsCard = ({ shows }) => {
-  console.log(shows);
   const [visibleMore, setVisibleMore] = useState(12);
   const navigate = useNavigate();
 

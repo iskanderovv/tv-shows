@@ -1,12 +1,16 @@
 import "./App.css";
+import axiosBase from "./api";
+
 import { Loader } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
-import axiosBase from "./api";
-import { useEffect, useState } from "react";
+
 import ShowsCard from "./components/shows/ShowsCard";
-import { Box, Container, Typography } from "@mui/material";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SingleShow from "./pages/single-show/SingleShow";
+
+import { useEffect, useState } from "react";
+import { Box, Container, Typography } from "@mui/material";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);

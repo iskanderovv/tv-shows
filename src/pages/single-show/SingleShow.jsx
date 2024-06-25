@@ -4,6 +4,7 @@ import axiosBase from "../../api";
 import { Box, Typography, Container } from "@mui/material";
 import { Loader } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
+import parse from 'html-react-parser';
 
 const SingleShow = () => {
   const { id } = useParams();
@@ -60,7 +61,7 @@ const SingleShow = () => {
             {show.name}:
             </Typography>
             <Typography variant="body1" py={1}>
-              {show.summary}
+              {parse(show.summary)}
             </Typography>
             <Typography variant="h6" sx={{ display: "flex", gap: "3px" }}>
               Genres:
